@@ -1,7 +1,10 @@
-#Entrada
-peso = float(input("calcule o peso de Lucas em kg:"))
-#Processos
-agua_ml = peso * 15
-copos = agua_ml / 250
-#Saída 
-print("quantos copos de agua Lucas precisa tomar:", int(copos))
+while True:
+    peso = float(input("digite o peso em kg:"))
+    agua_ml =peso * 15
+    copos = agua_ml / 250
+    print("quantos copos de agua por dia:", int(copos), "para atingit a meta" )
+    continuar = input("deseja calcular novamente? (s/n): ")
+    if continuar.lower() == "n" :
+        print("encerrado")
+        break
+    
